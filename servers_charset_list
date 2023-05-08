@@ -8,6 +8,10 @@ whois.lacnic.net	utf-8
 whois.museum		utf-8		-C UTF-8
 whois.ripe.net		iso-8859-1
 
+whois.nic.llyw.cymru	utf-8
+whois.nic.gov.scot	utf-8
+whois.nic.gov.wales	utf-8
+
 whois.aeda.net.ae	utf-8
 whois.nic.ar		utf-8
 whois.ax		utf-8
@@ -34,7 +38,7 @@ whois.isnic.is		iso-8859-1
 whois.nic.it		utf-8
 whois.jprs.jp		iso-2022-jp
 whois.nic.ad.jp		iso-2022-jp
-whois.domain.kg		cp1251
+whois.kg		cp1251
 whois.nic.or.kr		utf-8
 whois.kr		utf-8
 whois.nic.kz		utf-8
@@ -57,8 +61,10 @@ whois.sgnic.sg		utf-8
 whois.tld.sy		utf-8
 whois.thains.co.th	utf-8
 whois.ati.tn		utf-8
-whois.nic.tr		iso-8859-9
+whois.trabis.gov.tr	utf-8
 whois.twnic.net.tw	utf-8
+whois.nic.ac.uk		utf-8
+whois.gov.uk		utf-8
 whois.biz.ua		utf-8
 whois.co.ua		utf-8
 whois.pp.ua		utf-8

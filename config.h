@@ -17,7 +17,7 @@
 # include <sys/param.h>
 #endif
 
-#ifdef __GLIBC__
+#if defined __GLIBC__ && !defined __UCLIBC__
 # define ENABLE_NLS
 #endif
 
@@ -41,6 +41,12 @@
 # define HAVE_GETOPT_LONG
 # define HAVE_GETADDRINFO
 # define HAVE_BSDICRYPT
+#endif
+
+#if defined __midipix__
+# define HAVE_GETOPT_LONG
+# define HAVE_GETADDRINFO
+# define HAVE_SHA_CRYPT
 #endif
 
 #if defined __GLIBC__
@@ -103,7 +109,7 @@
 #endif
 
 /* or else getentropy(2) on Linux */
-#if defined __GLIBC__ && __GLIBC__ >= 2 && __GLIBC_MINOR__ >= 25
+#if defined __GLIBC__ && __GLIBC__ >= 2 && __GLIBC_MINOR__ >= 25 || defined __midipix__
 # define HAVE_GETENTROPY
 #endif
 

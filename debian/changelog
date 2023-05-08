@@ -1,3 +1,52 @@
+whois (5.5.17) unstable; urgency=medium
+
+  [ Robert Scheck ]
+  * Added the .cd TLD server.
+  * Updated the -kg NIC handles server name.
+
+  [ Marco d'Itri ]
+  * Removed 2 new gTLDs which are no longer active.
+
+ -- Marco d'Itri <md@linux.it>  Wed, 03 May 2023 14:24:37 +0200
+
+whois (5.5.16) unstable; urgency=medium
+
+  * Add bash completion support, courtesy of Ville Skyttä.
+  * Updated the .tr TLD server.
+  * Removed support for -metu NIC handles.
+
+ -- Marco d'Itri <md@linux.it>  Tue, 28 Feb 2023 00:58:22 +0100
+
+whois (5.5.15) unstable; urgency=medium
+
+  * Updated the .bd, .nz and .tv TLD servers.
+  * Added the .llyw.cymru, .gov.scot and .gov.wales SLD servers.
+  * Updated the .ac.uk and .gov.uk SLD servers.
+  * Recursion has been enabled for whois.nic.tv.
+  * Updated the list of new gTLDs with four generic TLDs assigned in
+    October 2013 which were missing due to a bug.
+  * Removed 4 new gTLDs which are no longer active.
+  * Added the Georgian translation, contributed by Temuri Doghonadze.
+  * Updated the Finnish translation, contributed by Lauri Nurmi.
+
+ -- Marco d'Itri <md@linux.it>  Wed, 28 Dec 2022 20:44:11 +0100
+
+whois (5.5.14) unstable; urgency=medium
+
+  * Added the .bf and .sd TLD servers.
+  * Removed the .gu TLD server.
+  * Updated the .dm, .fj, .mt and .pk TLD servers.
+  * Updated the charset for whois.nic.tr.
+  * Updated the list of new gTLDs.
+  * Removed whois.nic.fr from the list of RIPE-like servers, because it
+    is not one anymore. (Closes: #1021110)
+  * Renamed whois.arnes.si to whois.register.si in the list of RIPE-like
+    servers.
+  * Added the hiding string for whois.auda.org.au.
+  * Fixed uclibc builds, because uclibc does not have NLS support.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 16 Oct 2022 22:16:34 +0200
+
 whois (5.5.13) unstable; urgency=medium
 
   * Added the .sd TLD server.
