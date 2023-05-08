@@ -1,3 +1,9 @@
+whois (5.5.17-deepin1) unstable; urgency=medium
+
+  * Added deepin version convention.
+
+ -- Tianyu Chen <billchenchina2001@gmail.com>  Mon, 08 May 2023 10:23:26 +0800
+
 whois (5.5.17) unstable; urgency=medium
 
   [ Robert Scheck ]
