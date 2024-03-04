@@ -1,8 +1,49 @@
-whois (5.5.17-deepin1) unstable; urgency=medium
+whois (5.5.21) unstable; urgency=medium
 
-  * Added deepin version convention.
+  * Updated the .cv and .sd TLD servers.
+  * Remove 4 new gTLDs which are no longer active.
 
- -- Tianyu Chen <billchenchina2001@gmail.com>  Mon, 08 May 2023 10:23:26 +0800
+ -- Marco d'Itri <md@linux.it>  Sat, 24 Feb 2024 17:22:22 +0100
+
+whois (5.5.20) unstable; urgency=medium
+
+  * Added the .gn TLD server.
+  * Removed 6 new gTLDs which are no longer active.
+  * Enabled getopt_long(3) support on Solaris.
+
+ -- Marco d'Itri <md@linux.it>  Fri, 10 Nov 2023 15:26:02 +0100
+
+whois (5.5.19) unstable; urgency=medium
+
+  * Fixed english support for Japanese queries to not add again the /e
+    argument if it had already been provided by the user. (Closes: #1050171)
+  * Added the .ye and .বাংলা (.xn--54b7fta0cc, Bangladesh) TLD servers.
+  * Updated the .ba, .bb, .dk, .es, .gt, .jo, .ml, .mo, .pa, .pn, .sv,
+    .uy, .ﺍﻻﺭﺪﻧ (.xn--mgbayh7gpa, Jordan) and .澳門 (.xn--mix891f, Macao)
+    TLD servers.
+  * Upgraded the TLD URLs to HTTPS whenever possible.
+  * Updated the charset for whois.jprs.jp.
+  * Removed 3 new gTLDs which are no longer active.
+  * Removed support for the obsolete as32 dot notation.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 08 Oct 2023 22:58:33 +0200
+
+whois (5.5.18) unstable; urgency=medium
+
+  [ Marco d'Itri ]
+  * Updated the .ga TLD server. (Closes: #1037288)
+  * Added new recovered IPv4 allocations.
+  * Removed the delegation of 43.0.0.0/8 to JPNIC.
+  * Removed 12 new gTLDs which are no longer active.
+  * Improved the man page source, courtesy of Bjarni Ingi Gislason.
+    (Closes: #1040613)
+
+  [ Robert Scheck ]
+  * Added the .edu.za SLD server.
+  * Updated the .alt.za SLD server.
+  * Added the -ru and -su NIC handles servers.
+
+ -- Marco d'Itri <md@linux.it>  Sat, 22 Jul 2023 17:56:56 +0200
 
 whois (5.5.17) unstable; urgency=medium
 
