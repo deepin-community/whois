@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2001-2021 Marco d'Itri <md@linux.it>.
+ * Copyright (C) Marco d'Itri <md@linux.it>.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,6 +14,8 @@
  * You should have received a copy of the GNU General Public License along
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 /* for crypt, snprintf and strcasecmp */
@@ -271,6 +273,7 @@ int main(int argc, char *argv[])
 
     if (!salt_prefix) {
 	/* NULL means that crypt_gensalt will choose one later */
+	rounds_str[0] = '\0';
     } else if (rounds_support == 2) {
 	/* bcrypt strings always contain the rounds number */
 	if (rounds <= 5)
@@ -323,6 +326,8 @@ int main(int argc, char *argv[])
 	 * Build the actual argument to crypt(3) by concatenating the
 	 * method prefix, the rounds metadata (if any) and the salt string.
 	 */
+	if (!salt_prefix)
+	    salt_prefix = "";
 	salt = NOFAIL(malloc(strlen(salt_prefix) + strlen(rounds_str)
 		+ strlen(salt_arg) + 1));
 	*salt = '\0';
@@ -419,6 +424,7 @@ int main(int argc, char *argv[])
  */
 inline void *get_random_bytes(const unsigned int count)
 {
+    (void)(count); /* suppress the "unused parameter" warning */
     return NULL;
 }
 
@@ -537,7 +543,7 @@ void NORETURN display_help(int error)
 void display_version(void)
 {
     printf("mkpasswd %s\n\n", VERSION);
-    puts("Copyright (C) 2001-2021 Marco d'Itri\n"
+    puts("Copyright (C) Marco d'Itri\n"
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.");
 }

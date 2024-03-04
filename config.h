@@ -1,4 +1,5 @@
 /* Configurable features */
+/* SPDX-License-Identifier: GPL-2.0-or-later */
 
 /* Always hide legal disclaimers */
 #undef ALWAYS_HIDE_DISCL
@@ -13,7 +14,7 @@
 
 
 /* autoconf in cpp macros */
-#if defined __NetBSD__ || __OpenBSD__
+#if defined __NetBSD__ || defined __OpenBSD__
 # include <sys/param.h>
 #endif
 
@@ -71,6 +72,7 @@
 
 /* Unknown versions of Solaris */
 #if defined __SVR4 && defined __sun
+# define HAVE_GETOPT_LONG
 # define HAVE_SHA_CRYPT
 # define HAVE_CRYPT_H
 # define HAVE_SOLARIS_CRYPT_GENSALT

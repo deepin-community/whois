@@ -5,7 +5,7 @@
 -afrinic whois.afrinic.net
 -ap	whois.apnic.net
 -cznic	whois.nic.cz
--dk	whois.dk-hostmaster.dk
+-dk	whois.punktum.dk
 -il	whois.isoc.org.il
 -is	whois.isnic.is
 -kg	whois.kg
@@ -21,3 +21,5 @@
 -sixxs	whois.sixxs.net
 -uanic  whois.ua
 -bzh	whois.nic.bzh
+-ru	whois.tcinet.ru
+-su	whois.tcinet.ru
